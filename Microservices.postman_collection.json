@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "b5b0ee86-1f2d-4e81-b7e3-6e11c4ba2613",
+		"name": "Microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32577697"
+	},
+	"item": [
+		{
+			"name": "Orgnization",
+			"item": [
+				{
+					"name": "Save Organization",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\" : \"1\",\n    \"organizationName\" : \"NPST\",\n    \"organizationDescription\" : \"Network people service technology\",\n    \"organizationCode\" : \"CODE001\",\n    \"createDateTime\" : \"2024-10-07T23:10:30\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/organization",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"organization"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Organization By Code",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\" : \"1\",\n    \"organizationName\" : \"NPST\",\n    \"organizationDescription\" : \"Network people service technology\",\n    \"organizationCode\" : \"CODE001\",\n    \"createDateTime\" : \"2024-10-07T23:10:30\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/organization/CODE001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"organization",
+								"CODE001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API-Gatway",
+			"item": [
+				{
+					"name": "Employee",
+					"item": [
+						{
+							"name": "Save Employee",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"6\",\n    \"firstName\": \"shyam\",\n    \"lastName\": \"Tiwari\",\n    \"email\": \"shyam@gmail.com\",\n    \"departmentCode\": \"IT001\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9191/api/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9191",
+									"path": [
+										"api",
+										"employee"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Employee",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"2\",\n    \"firstName\": \"Abhi\",\n    \"lastName\": \"Yadav\",\n    \"email\": \"abhi@gmail.com\",\n    \"departmentCode\": \"IT001\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9191/api/employee/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9191",
+									"path": [
+										"api",
+										"employee",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Employee",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"2\",\n    \"firstName\": \"Abhi\",\n    \"lastName\": \"Yadav\",\n    \"email\": \"abhi@gmail.com\",\n    \"departmentCode\": \"IT001\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9191/api/employee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9191",
+									"path": [
+										"api",
+										"employee"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Orgnization",
+					"item": [
+						{
+							"name": "Save Organization",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\" : \"1\",\n    \"organizationName\" : \"NPST\",\n    \"organizationDescription\" : \"Network people service technology\",\n    \"organizationCode\" : \"CODE001\",\n    \"createDateTime\" : \"2024-10-07T23:10:30\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9191/api/organization",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9191",
+									"path": [
+										"api",
+										"organization"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Organization By Code",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\" : \"1\",\n    \"organizationName\" : \"NPST\",\n    \"organizationDescription\" : \"Network people service technology\",\n    \"organizationCode\" : \"CODE001\",\n    \"createDateTime\" : \"2024-10-07T23:10:30\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:9191/api/organization/CODE002",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9191",
+									"path": [
+										"api",
+										"organization",
+										"CODE002"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Save Employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"2\",\n    \"firstName\": \"Abhi\",\n    \"lastName\": \"Yadav\",\n    \"email\": \"abhi@gmail.com\",\n    \"departmentCode\": \"IT001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"2\",\n    \"firstName\": \"Abhi\",\n    \"lastName\": \"Yadav\",\n    \"email\": \"abhi@gmail.com\",\n    \"departmentCode\": \"IT001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/employee/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employee",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Employee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"2\",\n    \"firstName\": \"Abhi\",\n    \"lastName\": \"Yadav\",\n    \"email\": \"abhi@gmail.com\",\n    \"departmentCode\": \"IT001\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
